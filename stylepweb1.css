@@ -108,6 +108,13 @@ nav ul li a.active span {
 
 /*bagian tengah*/
 
+.containe aside {
+     width: 20%;
+     height: 330px;
+     float: right;
+     padding: 25px;
+}
+
 section {
     margin: auto;
     display: flex;
