@@ -1,0 +1,21 @@
+* {
+    text-decoration: none;
+    justify-content: center;
+}
+body {
+    font-family:'courier new';
+    font-style: oblique;
+    min-height: 100vh;
+    background: url(https://img.freepik.com/free-vector/vector-illustration-winter-landscape_1441-130.jpg?w=1380&t=st=1678358264~exp=1678358864~hmac=ec260fbe9e6644845811ad7d82a9afdc6980dea0eda5565b5f6c78fbff601df1);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    user-select: none;
+}
