@@ -6,10 +6,10 @@
 }
 
 .containe aside{
-     width:20%;
-     height:330px;
-     float:right;
-     padding: 25px;
+    width: 20%;
+    height: 330px;
+    float: right;
+    padding: 25px;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://img.freepik.com/free-vector/watercolor-winter-season-celebration-background_23-2149872808.jpg?w=1380&t=st=1678598155~exp=1678598755~hmac=60fcf4da4df050a07093a2f36b9932c0d08977c5a84d28dd0c0fe0e647775a6a');
+    background: gray; /* Gray background */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -36,7 +36,7 @@ body {
     font-weight: bold;
     float: left;
     font-family: courier;
-    color: black;
+    color: rgb(252, 252, 252);
     user-select: none;
 }
 
@@ -46,21 +46,22 @@ body {
 
 nav {
     font-family: 'Arial';
+    position: fixed;
     font-size: 15px;
     width: 100%;
-    margin: auto;
-    display: flex;
     line-height: 80px;
-    position: sticky;
     top: 0;
-    background-color: rgba(116, 97, 202, 0.39);
-    backdrop-filter: blur(2px);
+    background-color: black;
     justify-content: space-between;
-    align-items: center;
     z-index: 100;
-
 }
 
+nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -70,11 +71,12 @@ nav ul {
 
 nav ul li {
     float: left;
+    display: inline-block;
 }
 
 nav ul li a {
     position: relative;
-    color: black;
+    color: white; /* White text */
     font-weight: 600;
     padding: 6px 15px;
     margin-left: 20px;
@@ -85,8 +87,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color:#2F8F9D;
-    
+    color: #9e2121;
 }
 
 nav ul li a span {
@@ -113,61 +114,62 @@ nav ul li a.active span {
     user-select: none;
 }
 
-/*bagian tengah*/
+/* Bagian tengah */
 
 section {
     margin: auto;
     display: flex;
     margin-bottom: 50px;
 }
+
 .column {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
 .column .deskripsi {
     font-size: 20px;
     font-weight: bold;
-    font-family:comic sans ms;
-    color: #2F8F9D;
+    font-family: comic sans ms;
+    color: #9e2121;
 }
 
 h2 {
     font-family: Trebuchet MS;
     font-weight: 800;
     font-size: 45px;
-    color: #2F8F9D;
+    color: #9e2121;
     width: 100%;
     line-height: 50px;
 }
 
 a.btn-1 {
-    background: #256D85;
+    background: #ffffff;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-weight: bold;
 }
 
 a.btn-1:hover {
-    background: #9C9EFE;
+    background: #949494;
     text-decoration: none;
 }
 
 a.btn-2 {
-    background: #9C9EFE;
+    background: #ffffff;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-weight: bold;
 }
 
 a.btn-2:hover {
-    background: #256D85;
+    background: #9e2121;
     text-decoration: none;
 }
 
@@ -183,25 +185,29 @@ img.right {
     user-select: none;
 }
 
-.mid{
+.mid {
     text-align: center;
     width: 100%;
 }
+
 .listpartner {
     width: 100%;
     position: relative;
-    display: flex; 
+    display: flex;
 }
-.imgpart{
+
+.imgpart {
     width: 20%;
     margin: 0 auto;
 }
+
 .imgpart img {
     width: 80%;
     border-radius: 10%;
     user-select: none;
 }
-.imgpart p{
+
+.imgpart p {
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 20px;
@@ -210,8 +216,9 @@ img.right {
 }
 
 #contact {
-    background:#9C9EFE;
+    background: gray;
     padding: 50px 0px 50px 0px;
+    
 }
 
 .footer {
@@ -225,26 +232,24 @@ img.right {
 .footersect {
     width: 20%;
     margin: 0 auto;
+    text-align: center;
 }
 
 h3 {
-    font-family: 'Poppins' ;
+    font-family: 'Poppins';
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color:#2F8F9D;
+    color: #9e2121;
     width: 100%;
     line-height: 50px;
 }
 
 #copyright {
     text-align: center;
-    width: 100%;
-    padding: 50px 0x 50px 0px;
-    margin-top: 30px;
 }
 
-@media screen and (max-width: 991.98px){
+@media screen and (max-width: 991.98px) {
     .wrap {
         width: 90%;
     }
@@ -252,7 +257,6 @@ h3 {
     .logo {
         display: block;
         width: 100%;
-
         text-align: center;
     }
 
@@ -291,5 +295,4 @@ h3 {
     .imgpart {
         width: 50%;
     }
-
 }
